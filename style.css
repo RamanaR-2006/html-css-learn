@@ -1,0 +1,130 @@
+.head1{
+    background-color: white;
+}
+/*header formatting*/
+
+#image_aditi{
+    float:left;
+    display: flow-root;
+}
+/*image formatting to prevent overflow and weird layout*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.TranslateButton:hover{
+    font-size: 1.025em;
+    background-color: bisque;
+    cursor: pointer;
+}
+/* when hovered translation button(2) will show this style*/
+
+.TranslateButton:not(:hover){
+    background-color:burlywood;
+    cursor: pointer;
+}
+/* while being translation button(2) will show this style*/
+
+.menu_button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(57, 63, 68);
+    border: 0px;
+    font-size: 1.05em;
+    width: 100%;
+    margin: 5px;
+}
+/*menu button style while being hovered*/
+
+.menu_button:not(:hover){
+    color: white;
+    cursor: pointer;
+    background-color: rgb(27, 30, 34);
+    border: 0px;
+    width: 100%;
+    display: block;
+    margin: 5px;
+}
+/*menu button style while not being hovered*/
+
+.dropdown{
+    background-color: rgb(27, 30, 34);
+    text-align: center;
+    border:0px;
+    margin: 0px;
+    width: 100%;
+}
+/*drop down menu style*/
+
+.dropdown a:hover{
+    display: inline-block; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(88, 19, 19);
+    position: relative;
+}
+/*Style for drop down menu hyperlinks while being hovered*/
+
+.dropdown a:not(:hover){
+    display: inline-block; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 80, 80);
+    position: relative
+}
+/*Style for drop down menu hyperlinks while not being hovered*/
+
+.dropdownContent{
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 5px hsla(0,0%,0%,0.8);
+}
+/*Style for div containing the dropdown menu hyperlinks*/
+
+.FooterDiv a:hover{
+    display: inline-block; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(88, 19, 19);
+    margin: auto;
+}
+/*Style for drop down menu hyperlinks while being hovered*/
+
+.FooterDiv a:not(:hover){
+    display: inline-block; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 80, 80);
+    margin: auto;
+
+}
+/*Style for drop down menu hyperlinks while not being hovered*/
+
+.FooterDiv{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none; /* no bullets*/
+    background-color: rgb(27, 30, 34);
+    padding:0px;
+    margin:0px; 
+    overflow: hidden;
+    width: 100%;
+    
+}
+/*navbar list style*/
+
+.navbar li{
+    float: left;
+    width: 25%;
+}
+
+.navbar {
+    width: 100%;
+    background-color:  rgb(27, 30, 34);
+    overflow: auto;
+  }
+/*navbar*/

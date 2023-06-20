@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- (webpage) header -->
+
+        <title id="EngTitle">MAIS Language Conference</title> 
+        <!--title of web page in english -->
+
+        <link rel="icon" type="image/png" href="AditiLogo.png">
+        <!-- favicon which represents aditi's logo(thanks wikipedia)-->
+
+        <link rel="stylesheet" href="style.css">
+        <!--linking css file to index-->
+        
+        <script src="https://kit.fontawesome.com/3006d24098.js" crossorigin="anonymous"></script>
+        <!--icon-->
+
+    </head>
+
+    <body>
+        <!--body-->
+        
+    <nav class="navbar"> <!--the thing on top which divides the useful buttons, combined with drop down menu buttons for specific links and downloads-->
+        <ul>
+            <li><div class="dropdown" id="EngDropDown2">
+                <div>
+                <button id="menu2" onclick="dropDown2()" class="menu_button"><b>ABOUT</b></button>
+                </div>
+                <hr>
+                <div class="dropdownContent" id="dropDownCont2" style="display: none;" >
+                    <a href="EventBrochure.pdf" target="_blank">Event Brochure</a><br>
+                    <a href="LocAndTime.pdf" target="_blank">Location and Timings</a><br>
+                    <a href="mais_test.pdf" target="_blank">Mallya Aditi International School</a><br>
+                </div>
+            </div></li>
+
+            <li><div class="dropdown" id="EngDropDown"> <!--class for drop down menus, will be used in css file to standardize each drop down menu-->
+                <div>
+                <button id="menu" onclick="dropDown()" class="menu_button"><b>SPONSORS</b></button> <!--menu button-->
+                </div>
+                <hr>
+                <div class="dropdownContent" id="dropDownCont" style="display: none;" >
+                    <a href="https://github.com/RamanaR-2006" target="_blank">SPONSOR1</a><br> <!--useful stuff that pop up when you press drop down menu-->
+                    <a href="https://github.com/RamanaR-2006" target="_blank">SPONSOR2</a><br>
+                    <a href="https://github.com/RamanaR-2006" target="_blank">SPONSOR3</a><br>
+                </div>
+            </div></li>
+            <!--dropdown menu(s) format will practically be copied 4 times(for eng), with different <a> -> hyperlinks and downloads-->
+            
+            
+
+            <li><div class="dropdown" id="EngDropDown3">
+                <div>
+                <button id="menu3" class="menu_button" onclick="dropDown3()"><b>HOME</b></button> <!--pretty useless menu cuz all the hyperlinks are target=_blank, but 4 buttons look nicer-->
+                </div>
+                <hr>
+                <div class="dropdownContent" id="dropDownCont3" style="display: none;" >
+                    <a href="index.html" target="_blank">HOME</a><br>
+                </div>
+            </div></li>
+
+            <li><div class="dropdown" id="EngDropDown4">
+                <div>
+                <button id="menu4" onclick="dropDown4()" class="menu_button"><b>CONTACT US</b></button>
+                </div>
+                <hr>
+                <div class="dropdownContent" id="dropDownCont4" style="display: none;" >
+                    <a href="mailto:ramanar.2024@gsuite.aditi.edu.in" target="_blank"><i class="fa-sharp fa-regular fa-envelope"></i></a><br> <!-- arbitrary mail to me-->
+                    <a href="https://twitter.com/elonmusk" target="_blank"><i class="fa-brands fa-twitter"></i></a><br> <!--twitter-->
+                    <a href="https://www.instagram.com/ramana_are/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a><br> <!--instagram-->
+                    <a href="tel:1234567890" target="_blank" target="_blank"><i class="fa-solid fa-phone"></i></a> <!--phone number-->
+                </div>
+            </div></li> <!--Contact menu, source for icons: "https://fontawesome.com/"-->
+
+        </ul>
+    </nav>
+    <!-- navigation menu-->
+        <header class="head1">
+            <div>
+            <img src = "Aditiimage.png" id="image_aditi"> <!-- picture of aditi-->
+            <h1>Welcome to MAIS Language Conference!</h1>
+            <p>What is up</p>
+            <br>
+        </div>
+        </header>
+        <!-- header-->
+
+
+        <div id="box1">box1</div>
+        <!-- temp -->
+
+        <h2>Sup</h2>
+
+        <p id="txt1">
+
+            <span style="background-color: blue;">whats sup</span>
+            <!-- ಏನಿದೆ -->
+
+        </p>
+
+        <a href = "blah.html"
+        title="Goes to blah"
+        target="_blank">click this hyper link</a>
+        <br>
+        <br>
+
+        <button class="TranslateButton" onclick="englishToKannada()" id="EngToKan" style="color: black; border-radius: 15px;display: inline;">ಇಂಗ್ಲಿಷ್ ಅನ್ನು ಕನ್ನಡಕ್ಕೆ ಭಾಷಾಂತರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ?</button>
+        <!-- above is the default button to translate the content into Kannada-->
+
+        <button class="TranslateButton" onclick="kannadaToEnglish()" id="KanToEng" style="color: black; border-radius: 15px; display: none;">Click to translate Kannada to English?</button>
+        <!-- above is the initially invisible button to translate the Kannada into Eannada-->      
+
+        <script>
+            //javascript (annoying) for functions to be defined for buttons to do stuff
+
+            function englishToKannada(){
+                document.getElementById("txt1").innerHTML="ಏನಿದೆ"
+                document.getElementById("EngToKan").style.display = 'none';
+                document.getElementById("KanToEng").style.display = 'inline';
+            }
+            //function eng to kan makes button translate the eng to kan. it then makes the
+            //original button invisible and then makes button KanToEng visible
+
+            function kannadaToEnglish(){
+                document.getElementById("txt1").innerHTML="whats sup"
+                document.getElementById("EngToKan").style.display = 'inline';
+                document.getElementById("KanToEng").style.display = 'none';
+            }
+            //function kan to eng makes button translate the kan to eng. it then makes the
+            //new button invisible and then makes original button EngTokang visible, I opted to go for the button changing everything in site but not webpage cuz 
+            // more fancy and the requirements for this was 'a webpage'
+            
+            function dropDown(){
+                var x = document.getElementById("dropDownCont"); 
+                // var x is needed to compare the display values. General if class in java script to compare values of whether menu is open or not :V
+                if (window.getComputedStyle(x).display == "none") {
+                    document.getElementById("dropDownCont").style.display = 'inline-block';
+                     }
+                else{
+                    document.getElementById("dropDownCont").style.display = 'none'; 
+                }
+            }
+            //function drops down the drop down menu depending on whether it has already been enabled
+
+            function dropDown2(){
+                var x = document.getElementById("dropDownCont2");
+                if (window.getComputedStyle(x).display == "none") {
+                    document.getElementById("dropDownCont2").style.display = 'inline-block';
+                     }
+                else{
+                    document.getElementById("dropDownCont2").style.display = 'none'; 
+                }
+            }
+            //function drop down menu for about us segment
+
+            function dropDown3(){
+                var x = document.getElementById("dropDownCont3");
+                if (window.getComputedStyle(x).display == "none") {
+                    document.getElementById("dropDownCont3").style.display = 'inline-block';
+                     }
+                else{
+                    document.getElementById("dropDownCont3").style.display = 'none'; 
+                }
+            }
+            //function drop down menu for home segment, and yes, I know the home button can be put in a hyperlink to do the same thing as the hyperlink within it
+
+            function dropDown4(){
+                var x = document.getElementById("dropDownCont4");
+                if (window.getComputedStyle(x).display == "none") {
+                    document.getElementById("dropDownCont4").style.display = 'inline-block';
+                     }
+                else{
+                    document.getElementById("dropDownCont4").style.display = 'none'; 
+                }
+            }
+            //function drop down menu for contact us segment
+
+        </script>
+        
+        <footer>
+            <hr><div class="FooterDiv">
+            <b>Follow Us!</b>
+                    <a href="https://www.facebook.com/zuck/"><i class="fa-brands fa-facebook"></i></a> <!-- facebook -->
+                    <a href="https://twitter.com/elonmusk" target="_blank"><i class="fa-brands fa-twitter"></i></a> <!--twitter-->
+                    <a href="https://www.instagram.com/ramana_are/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a> <!--instagram-->
+                </div>  <!--footer with the classic links-->
+        </footer>
+        <!--footer-->
+
+    </body>
+<!--- finito -->
+</html>
