@@ -135,9 +135,33 @@ body{
 }
 
 #image_aditi{
+    float:right;
+    overflow: auto;
+    display: flow-root;
+}
+/*image formatting to prevent overflow and weird layout*/
+
+#sponsor{
     float:left;
     overflow: auto;
     display: flow-root;
-    
+    margin: 40px;
 }
-/*image formatting to prevent overflow and weird layout*/
+.sponsor1{
+    margin-bottom: 150;
+    padding-left: 15px;
+}
+.sponsor2{
+    margin-bottom: 150px;
+}
+.FAQ li{
+    padding: 3px 5px;
+    margin: 10px;
+}
+#faqPIC{
+    float:right;
+    overflow: auto;
+    display: flow-root;
+    margin: 40px;
+}
+/*formatting for faq list and pic */
